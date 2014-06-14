@@ -6,7 +6,7 @@ var SerialPort = serialport.SerialPort;
 module.exports = {
 
   // Send request to the Arduino board running aREST
-  sendcommand: function(req,res) {
+  send: function(req,res) {
 
     // Decode command
     var command = req.query['command'];
