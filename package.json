@@ -1,0 +1,22 @@
+{
+  "name": "node-aREST",
+  "version": "0.1.0",
+  "description": "A Node.JS module for the aREST Arduino library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcoschwartz/node-aREST"
+  },
+  "keywords": [
+    "arduino"
+  ],
+  "author": "Marco Schwartz <marcolivier.schwartz@gmail.com> (http://www.marcoschwartz.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoschwartz/node-aREST/issues"
+  },
+  "homepage": "https://github.com/marcoschwartz/node-aREST"
+}
