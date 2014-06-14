@@ -3,7 +3,7 @@ var request = require('request');
 var serialport = require("serialport");
 var SerialPort = serialport.SerialPort;
 
-module.export = {
+module.exports = {
 
   // Send request to the Arduino board running aREST
   sendcommand: function(req,res) {
