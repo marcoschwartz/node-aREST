@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/marcoschwartz/node-aREST/issues"
   },
-  "homepage": "https://github.com/marcoschwartz/node-aREST"
+  "homepage": "https://github.com/marcoschwartz/node-aREST",
+  "dependencies": {
+    "request": "^2.36.0",
+    "serialport": "^1.4.0"
+  }
 }
