@@ -1,5 +1,5 @@
 {
-  "name": "node-aREST",
+  "name": "arest",
   "version": "0.1.0",
   "description": "A Node.JS module for the aREST Arduino library",
   "main": "index.js",
