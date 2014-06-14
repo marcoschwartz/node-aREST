@@ -1,6 +1,6 @@
 // Require modules
 var request = require('request');
-var serialport = require("serialport");
+var serialport = require('serialport');
 var SerialPort = serialport.SerialPort;
 
 module.exports = {
