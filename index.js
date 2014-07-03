@@ -12,10 +12,12 @@ module.exports = {
     var command = req.query['command'];
     var target = req.query['target'];
     var type = req.query['type'];
+    var speed = req.query['speed'];
 
     console.log("Command: " + command);
     console.log("Target: " + target);
     console.log("Type: " + type);
+    console.log("Speed: " + speed);
 
     // Perform request
 
@@ -46,7 +48,7 @@ module.exports = {
       var SerialPort = serialport.SerialPort;
 
       var serialPort = new SerialPort(target, {
-        baudrate: 9600,
+        baudrate: speed,
         parser: serialport.parsers.readline('\n')
       });
 
