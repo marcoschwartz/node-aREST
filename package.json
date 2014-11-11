@@ -1,6 +1,6 @@
 {
   "name": "arest",
-  "version": "0.1.5",
+  "version": "0.2.1",
   "description": "A Node.JS module for the aREST Arduino library",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
     "svd-xbee": "*",
     "util": "*",
     "request": "*",
+    "jade": "*",
     "serialport": "^1.4.6"
   }
 }
