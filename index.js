@@ -281,6 +281,17 @@ function Device () {
       this.xbeeRequest('/digital/' + pin + '/' + value, callback);
     }
   };
+  
+  this.takeSnapshot = function(callback) {
+
+    if (this.type == 'http'){
+      request({
+        uri: 'http://' + this.address + '/camera/snapshot/',
+        json: true,
+        timeout: 1000
+      }, callback);
+    }
+  };
 
   this.pinMode = function(pin, value, callback) {
 
@@ -434,7 +445,21 @@ module.exports = function (app) {
       res.json(body);
     });
   });
+  
+   // Take picture (for RPi)
+  app.get('/:device/camera/snapshot', function(req,res){
 
+    console.log('Snapshot request sent to device: ' + req.params.device);
+
+    // Get device
+    device = aREST.getDevice(req.params.device);
+
+    // Take shot
+    device.takeSnapshot(function(error, response, body) {
+      res.json(body);
+    });
+  });
+  
   return {
     devices: aREST.devices,
     addDevice: function(type, address, speed) {
