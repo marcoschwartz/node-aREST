@@ -502,6 +502,13 @@ module.exports = function (app) {
     getDevices: function() {
       return aREST.devices;
     },
+    getDevice: function(device) {
+      for(var i = 0; i < this.devices.length; i++) {
+        if (aREST.devices[i].id == device || aREST.devices[i].name == device) {
+          return aREST.devices[i];
+        }
+      }
+    },
     heartBeat: function(delay) {
       setInterval(function() {
         for(var i = 0; i < aREST.devices.length; i++) {
