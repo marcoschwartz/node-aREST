@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/marcoschwartz/node-aREST",
   "dependencies": {
-    "svd-xbee": "*",
-    "util": "*",
-    "request": "*",
-    "jade": "*",
-    "serialport": "^1.4.6"
+    "svd-xbee": "latest",
+    "util": "latest",
+    "request": "latest",
+    "jade": "latest",
+    "serialport": "latest"
   }
 }
