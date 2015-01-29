@@ -1,6 +1,6 @@
 {
   "name": "arest",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A Node.JS module for the aREST Arduino library",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/marcoschwartz/node-aREST",
   "dependencies": {
-    "svd-xbee": "latest",
+    "xbee-arest": "latest",
     "util": "latest",
     "request": "latest",
     "jade": "latest",

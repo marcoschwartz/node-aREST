@@ -2,7 +2,7 @@
 var request = require('request');
 var serialport = require("serialport");
 var SerialPort = serialport.SerialPort;
-var XBee = require('svd-xbee').XBee;
+var XBee = require('xbee-arest').XBee;
 var util = require('util');
 
 var aREST = {
