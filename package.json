@@ -1,6 +1,6 @@
 {
   "name": "arest",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A Node.JS module for the aREST Arduino library",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
     "util": "latest",
     "request": "latest",
     "jade": "latest",
-    "serialport": "latest"
+    "serialport": "2.0.6"
   }
 }
